@@ -130,7 +130,7 @@ const Homepage = () => {
                                         latestAnimeData.releases.map((data, index) => {
                                             return (
                                                 <Card
-                                                    key={index}
+                                                    key=""
                                                     imgUrl={data.cover_url}
                                                     title={data.name}
                                                     href={`/anime/${data.id}`}
@@ -152,7 +152,7 @@ const Homepage = () => {
                                     {
                                         latestAnimeData.recents.map((data, index) => {
                                             return(
-                                                <div className="swiper-slide" key={index}>
+                                                <div className="swiper-slide" key="">
                                                     <Card
                                                         imgUrl={data.cover_url}
                                                         title={data.name}
@@ -192,7 +192,7 @@ const Homepage = () => {
 
                     </div>
                 </>
-            ) : <Loading />}
+            ) : }
         </>
     )
 }
