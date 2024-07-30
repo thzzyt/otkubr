@@ -95,7 +95,7 @@ const Homepage = () => {
                 content="https://raw.githubusercontent.com/MastayY/kumanime/main/public/logo.png"
                 />
             </Helmet>
-            {(latestAnimeData.status === "success" && newsAnimeData) ? (
+            {(newsAnimeData) ? (
                 <>
                     <Hero />
                     <div className="main gap-5 px-7 pt-10 grid lg:grid-cols-9 grid-cols-1 bg-bg-kumanime">
