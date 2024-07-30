@@ -127,7 +127,7 @@ const Homepage = () => {
                                 </div>
                                 <Cards>
                                     {
-                                        latestAnimeData.home.releases.map((data, index) => {
+                                        latestAnimeData.releases.map((data, index) => {
                                             return (
                                                 <Card
                                                     key={index}
@@ -150,7 +150,7 @@ const Homepage = () => {
                                 </div>
                                 <Slider>
                                     {
-                                        latestAnimeData.home.recents.map((data, index) => {
+                                        latestAnimeData.recents.map((data, index) => {
                                             return(
                                                 <div className="swiper-slide" key={index}>
                                                     <Card
