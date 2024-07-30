@@ -134,7 +134,7 @@ const Homepage = () => {
                                                     imgUrl={data.cover_url}
                                                     title={data.name}
                                                     href={`/anime/${data.id}`}
-                                                    episode={data.episode}
+                                                    episode="Novo episodio"
                                                     rating="Baru"
                                                 />
                                             )
@@ -157,8 +157,8 @@ const Homepage = () => {
                                                         imgUrl={data.cover_url}
                                                         title={data.name}
                                                         href={`/anime/${data.id}`}
-                                                        episode={data.episode.replace("Episode", " Episode")}
-                                                        rating={`☆ ${data.score}`}
+                                                        episode="Novo episodio"
+                                                        rating=""
                                                     />
                                                 </div>
                                             )
