@@ -192,7 +192,7 @@ const Homepage = () => {
 
                     </div>
                 </>
-            ) : }
+            ) : <Loading />}
         </>
     )
 }
