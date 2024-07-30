@@ -127,12 +127,12 @@ const Homepage = () => {
                                 </div>
                                 <Cards>
                                     {
-                                        latestAnimeData.home.on_going.map((data, index) => {
+                                        latestAnimeData.home.releases.map((data, index) => {
                                             return (
                                                 <Card
                                                     key={index}
-                                                    imgUrl={data.thumb}
-                                                    title={data.title}
+                                                    imgUrl={data.cover_url}
+                                                    title={data.name}
                                                     href={`/anime/${data.id}`}
                                                     episode={data.episode}
                                                     rating="Baru"
@@ -150,12 +150,12 @@ const Homepage = () => {
                                 </div>
                                 <Slider>
                                     {
-                                        latestAnimeData.home.complete.map((data, index) => {
+                                        latestAnimeData.home.recents.map((data, index) => {
                                             return(
                                                 <div className="swiper-slide" key={index}>
                                                     <Card
-                                                        imgUrl={data.thumb}
-                                                        title={data.title}
+                                                        imgUrl={data.cover_url}
+                                                        title={data.name}
                                                         href={`/anime/${data.id}`}
                                                         episode={data.episode.replace("Episode", " Episode")}
                                                         rating={`☆ ${data.score}`}
